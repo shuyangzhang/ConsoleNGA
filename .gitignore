@@ -1,2 +1,5 @@
 # virtualenv files
 devenv/
+
+# config file
+config.json
