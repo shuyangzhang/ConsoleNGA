@@ -16,7 +16,7 @@ class NGAJsonParser(object):
             "310": "forward",
             "182": "mage",
             "414": "game",
-            "-8961121": "jx3",
+            "-7861121": "jx3",
             "-2371813": "eve"
         }
         self.freegame_url = "https://bbs.nga.cn/thread.php?stid=12002550&lite=js"
@@ -24,7 +24,9 @@ class NGAJsonParser(object):
         self.subject_url = "https://bbs.nga.cn/read.php?tid={tid}&_ff={fid}&page={page}&lite=js"
         self._load_cookies()
         self.JSON_STRAT_INDEX = 33
-        pass
+        self.thread_id = -7
+        self.subject_id = 0
+        self.page = 1
 
     def _load_cookies(self):
         with open("config.json", "r") as f:
@@ -88,6 +90,12 @@ class NGAJsonParser(object):
             print("content = {}".format(replies[index]["content"]))
             print("postdate = {}".format(replies[index]["postdate"]))
             print("------------------------------------------")
+    
+    def view(self):
+        pass
+
+    def back(self):
+        pass
 
 
 if __name__ == "__main__":
