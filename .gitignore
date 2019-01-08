@@ -3,3 +3,6 @@ devenv/
 
 # config file
 config.json
+
+# editor setting files
+.vscode/
