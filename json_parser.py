@@ -7,17 +7,17 @@ import datetime
 class NGAJsonParser(object):
     def __init__(self):
         self.thread_dict = {
-            "-7": "maelstrom",
-            "436": "it",
-            "334": "hardware",
-            "498": "secondhand",
-            "422": "hearthstone",
-            "7": "14t",
-            "310": "forward",
-            "182": "mage",
-            "414": "game",
-            "-7861121": "jx3",
-            "-2371813": "eve"
+            "maelstrom": "-7",
+            "it": "436",
+            "hardware": "334",
+            "secondhand": "498",
+            "hearthstone": "422",
+            "14t": "7",
+            "forward": "310",
+            "mage": "182",
+            "game": "414",
+            "jx3": "-7861121",
+            "eve": "-2371813"
         }
         self.freegame_url = "https://bbs.nga.cn/thread.php?stid=12002550&lite=js"
         self.thread_url = "https://bbs.nga.cn/thread.php?fid={fid}&page={page}&lite=js"
