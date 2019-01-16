@@ -108,11 +108,12 @@ class NGAJsonParser(object):
     def into(self, index):
         if not self.thread_id:
             self.thread_id = self.thread_dict.get(index, "-7")
-            self.view()
         elif not self.subject_id:
             self.subject_id = self.subject_dict.get(str(index), 0)
-            self.view()
 
+        self.page = 1
+        self.view()
+        
     def back(self):
         if self.subject_id:
             self.subject_id = 0
