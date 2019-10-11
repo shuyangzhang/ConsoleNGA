@@ -17,7 +17,8 @@ class NGAJsonParser(object):
             "mage": "182",
             "game": "414",
             "jx3": "-7861121",
-            "eve": "-2371813"
+            "eve": "-2371813",
+            "classic": "624",
         }
         self.subject_dict = {}
         self.free_game_url = "https://bbs.nga.cn/thread.php?stid=12002550&lite=js"
